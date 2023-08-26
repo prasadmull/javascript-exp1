@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blinkit clone</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .loader{
+                height: 20px;
+                width: 20px;
+                border:4px solid rgb(208, 208, 214);
+                border-left:4px solid rgb(0, 4, 255);
+                border-radius: 50%;
+            
+                animation: loader 0.8s linear infinite;
+
+            }
+            @keyframes loader{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform: rotate(360deg);
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin: 30px;
+                padding: 5px;
+            }
+            .parent{
+                padding: 20px;
+                background-color: green;
+            }
+            .child{
+                padding: 20px;
+                background-color: red;
+                width: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="checkbox" value="hi">
+        <img src="https://3.bp.blogspot.com/-wLjxK9y47wg/UZ80QmvDaSI/AAAAAAAAACI/AZFXxaeALdc/s1600/9_Lion+HD+Wallpapers.jpg" alt="lion" width="500px">
+        <button id="btn" onclick="addLoader()">
+            <span>print input's value</span>
+            <h1>Hello Prasad</h1>
+            <b>How are you?</b>
+        </button>
+        <button class="button"
+         onclick="clicked()"
+         onmouseover="mouseEntered()"
+         onmouseleave="mouseLeaved()"
+         ondblclick="doubleClicked()">Click Me</button>
+
+        <button id="bt">Click</button>
+        <button id="remove">remove item</button>
+        <button id="changeC">change color</button>
+        <div class="parent">Parent
+            <div class="child">child</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
